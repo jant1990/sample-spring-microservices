@@ -1,0 +1,6 @@
+jobs:
+  build:
+    docker:                  # executor
+      - image: sample-spring-microservices
+    steps:                   # steps
+      - run: docker-compuse up
