@@ -1,6 +1,14 @@
+version: 2.1
 jobs:
-  build:
-    docker:                  # executor
-      - image: sample-spring-microservices
-    steps:                   # steps
-      - run: docker-compuse up
+  jbrotons:
+    docker:
+      - image: jant90/jbrotons-ci
+    steps:
+      - checkout
+      - run:
+        name: Hello Jbrotons
+        command: echo "Hello jbrotons"
+workflows:
+  jbrotons:
+    jobs:
+      - jbrotons
