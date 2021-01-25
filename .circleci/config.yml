@@ -7,7 +7,7 @@ jobs:
       - checkout
       - run:
           name: Hello
-          command: echo "Hello jbrotons"
+          command: echo "Hello jbrotons" && ls
 workflows:
   hello:
     jobs:
