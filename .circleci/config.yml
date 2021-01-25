@@ -5,9 +5,9 @@ jobs:
       - image: jant90/jbrotons-ci
     steps:
       - checkout
-      run:
-        name: Hello World
-        command: echo "Hello World"
+      - run:
+          name: Hello
+          command: echo "Hello jbrotons"
 workflows:
   hello:
     jobs:
