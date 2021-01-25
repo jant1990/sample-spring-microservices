@@ -1,6 +1,6 @@
 version: 2.1
 jobs:
-  hello:
+  jbrotons:
     docker:
       - image: jant90/jbrotons-ci
     steps:
@@ -9,6 +9,6 @@ jobs:
           name: Hello
           command: echo "Hello jbrotons" && ls
 workflows:
-  hello:
+  jbrotons:
     jobs:
-      - hello
+      - jbrotons
